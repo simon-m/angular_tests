@@ -1,0 +1,21 @@
+<ul class="products">
+    <li *ngFor="let product of products">
+         <a routerLink="/detail/{{product.id}}"> 
+        <span class="prodid"> {{product.id}} </span> 
+        {{product.name}} 
+        {{product.price | currency}}
+
+        </a>
+    </li>
+
+    <!-->
+    <li *ngFor="let product of products" (click)="onSelect(product)"
+        [class.selected]="product === selectedProduct">
+        <span class="prodid"> {{product.id}} </span> 
+        {{product.name}} 
+        {{product.price | currency}}
+    </li>
+    <-->
+</ul>
+
+<!--> <app-comp1-detail [product]="selectedProduct"> </app-comp1-detail> <-->
