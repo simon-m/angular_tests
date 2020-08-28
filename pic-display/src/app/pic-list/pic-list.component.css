@@ -1,0 +1,47 @@
+.gridWrapper {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-gap: 10px;
+  grid-auto-rows: auto;
+  
+  margin-top: 10px
+}
+
+.listPicImg {
+  border-radius: 6px;
+}
+
+.listPicImgCont {
+  grid-column: 1;
+
+  position: relative;
+  top: 0;
+  right: 0;
+
+}
+
+.listPicDescCont {
+  grid-column: 2;
+  border-radius: 6px;
+  background-color: #DDDDDD;
+}
+
+.sizeControl {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+}
+
+button {
+  width: 25px;
+  background-color: #369;
+  font-family: Cambria, Georgia;
+  border: none;
+  color: white;
+  padding: 2px 5px;
+  text-align: center;
+  font-size: 16px;
+  border-radius: 6px;
+}
+
+

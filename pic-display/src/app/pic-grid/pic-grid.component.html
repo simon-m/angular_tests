@@ -1,0 +1,9 @@
+<div class="gridWrapper">
+    <div class="picCont" *ngFor="let pic of pictures" >
+      <img [src]="pic.pathToFile"/>
+    </div>
+</div>
+
+<!-->
+[ngStyle]="{'background-image': 'url(' + pic.pathToFile + ')'}"
+<-->

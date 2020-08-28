@@ -1,0 +1,25 @@
+.gridWrapper {
+
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-gap: 1rem;
+  /*
+  display: grid;
+  grid-template-columns: rep(3, 1fr);
+  grid-gap: 5px;
+*/
+  /* grid-template-rows: auto;
+  /* grid-auto-rows: minimax(1fr, 30%);
+  grid-auto-flow: column; */
+}
+
+.picCont {
+  background-color: #DDD;
+  /* background-size: cover;*/
+}
+
+img {
+  object-fit: cover;
+  max-width: 100%;
+  max-height: 100%;
+}

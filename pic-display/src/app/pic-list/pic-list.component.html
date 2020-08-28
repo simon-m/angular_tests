@@ -1,0 +1,19 @@
+<div *ngFor="let pic of pictures"> 
+
+  <div class="gridWrapper">
+      <div class="listPicImgCont">
+        <img class="listPicImg" [style.width.px]="picWidth" [src]="pic.pathToFile" />
+        <div class="sizeControl"> 
+          <button (click)=bigger()> + </button> 
+          <button (click)=smaller()> - </button> 
+        </div>
+      </div>
+
+      <div class="listPicDescCont">
+        <p>{{pic.description}}</p>
+      </div>
+  </div>
+
+    <div style="clear:both"></div>
+</div>
+
