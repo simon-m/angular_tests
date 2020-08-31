@@ -1,0 +1,6 @@
+<h1> Main page</h1>
+ <input [(ngModel)]="userInput" placeholder="Input" />
+<p (click)="server_post()">Post</p>
+<p (click)="server_get()">Get</p>
+<p *ngIf="serverResponse"> Server says: {{serverResponse}}</p>
+
