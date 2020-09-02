@@ -1,0 +1,11 @@
+<div>
+  <textarea #textarea name="articleContent" type="text" [(ngModel)]="textAreaValue" id="articleText" rows=20 cols=100> 
+  Your article content goes here </textarea>
+</div>
+<div>
+  <input [(ngModel)]="article.author" placeholder="Author"/>
+
+  <!-- <button (click)=preview()> Preview </button>  -->
+  <button (click)=submit()> Submit </button>
+</div>
+
