@@ -1,0 +1,15 @@
+<div *ngFor="let article of articles" routerLink="/reader-article/{{article.id}}"> <!-- (click)="openArticle(article.id)">-->
+  <div class=articleText>
+    {{article.text}}
+  </div>
+  <div class=articleInfo>
+    <span class=articleAuthor>
+      By: {{article.author}}
+    </span>
+    <span class=articleDate>
+      On: {{article.date}}
+    </span>
+  </div>
+  <br/>
+</div>
+
